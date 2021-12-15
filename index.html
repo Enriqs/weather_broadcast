@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Broadcast</title>
+  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&amp;family=Merriweather:wght@700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1 class="text-primary">Weather Dashboard</h1>
+  </header>
+<main>
+  <section class="busqueda">
+    <h2 id="search-city">Search for a City:</h2>
+    <input id="search-input" class="form-input w-100" type="text" placeholder="Search!">
+    <button class="btn btn-info btn-block" id="btn-s" onclick="btnPressed();">Search</button>
+    <p class="linea"></p>
+    <button class="btn btn-info btn-block" id="btn1">Austin</button>
+    <button class="btn btn-info btn-block" id="btn2">Chicago</button>
+    <button class="btn btn-info btn-block" id="btn3">New York</button>
+    <button class="btn btn-info btn-block" id="btn4">Orlando</button>
+    <button class="btn btn-info btn-block" id="btn5">San Francisco</button>
+    <button class="btn btn-info btn-block" id="btn6">Seattle</button>
+    <button class="btn btn-info btn-block" id="btn7">Denver</button>
+    <button class="btn btn-info btn-block" id="btn8">Atlanta</button>
+  </section>
+  <section class="display-right" id="oculto">
+    <div class="recuadro">
+      <h3 id="h3dis">Atlanta</h3>
+      <ul>
+        <li id="1li1">Temp:74.01F</li>
+        <li id="1li2">Wind:6.67 MPH</li>
+        <li id="1li3">Humidity: 46%</li>
+        <li id="1li4">UV Index: 0.47</li>
+      </ul>
+    </div>
+    <div class="week-forecast">
+      <h3>5-Day Forecast:</h3>
+      <div class="container">
+        <div class="field">
+          <ul>
+            <li id="2li1">DD/MM/YYYY</li>
+            <li id="2li2">Emoji</li>
+            <li id="2li3">Temp:74.01F</li>
+            <li id="2li4">Wind:6.67 MPH</li>
+            <li id="2li5">Humidity: 46%</li>
+          </ul>
+        </div>
+        <div class="field">
+          <ul>
+            <li id="3li1">DD/MM/YYYY</li>
+            <li id="3li2">Emoji</li>
+            <li id="3li3">Temp:74.01F</li>
+            <li id="3li4">Wind:6.67 MPH</li>
+            <li id="3li5">Humidity: 46%</li>
+          </ul>
+        </div>
+        <div class="field">
+          <ul>
+            <li id="4li1">DD/MM/YYYY</li>
+            <li id="4li2">Emoji</li>
+            <li id="4li3">Temp:74.01F</li>
+            <li id="4li4">Wind:6.67 MPH</li>
+            <li id="4li5">Humidity: 46%</li>
+          </ul>
+        </div>
+        <div class="field">
+          <ul>
+            <li id="5li1">DD/MM/YYYY</li>
+            <li id="5li2">Emoji</li>
+            <li id="5li3">Temp:74.01F</li>
+            <li id="5li4">Wind:6.67 MPH</li>
+            <li id="5li5">Humidity: 46%</li>
+          </ul>
+      </div>
+      <div class="field">
+        <ul>
+          <li id="6li1">DD/MM/YYYY</li>
+          <li id="6li2">Emoji</li>
+          <li id="6li3">Temp:74.01F</li>
+          <li id="6li4">Wind:6.67 MPH</li>
+          <li id="6li5">Humidity: 46%</li>
+        </ul>
+    </div>
+    </div>
+    </div>
+  </section>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+<script src="./assets/js/script.js"></script>
+
+
+</body>
